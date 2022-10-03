@@ -1,0 +1,102 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+
+html, body {
+    min-height: 100%;
+    max-height: fit-content;
+}
+
+header {
+    margin-top: 2rem;
+    text-shadow: 0 2px 2px #000000, 0 10px 10px rgb(0 0 0 / 15%), 0 5px 2px rgb(0 0 0 / 10%), 0 34px 30px rgb(0 0 0 / 10%);
+}
+
+body {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Media/bgv.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("Media/bgh.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.shopping-list {
+    font-size: 1.7rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    text-shadow: 0 2px 2px #000000, 0 10px 10px rgb(0 0 0 / 15%), 0 5px 2px rgb(0 0 0 / 10%), 0 34px 30px rgb(0 0 0 / 10%);
+}
+
+input {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.container {
+    width: 12rem;
+    position: relative;
+}
+
+.amount {
+    position: absolute;
+    right: 0;
+}
+
+.name {
+    width: 6rem;
+    grid-area: name;
+}
+
+.quantity {
+    width: 6rem;
+    grid-area: quantity;
+}
+
+.add-item {
+    width: 2rem;
+    height: 2rem;
+    grid-area: button;
+}
+
+.label-container {
+    display: grid;
+    grid-template-areas: 'name button' 'quantity button';
+    grid-template-columns: 85% 15%;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.buying-click {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.Bought span {
+    text-decoration: line-through;
+}
